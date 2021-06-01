@@ -39,8 +39,8 @@ RUN ng build --output-path=dist
 FROM nginx:1.16.0-alpine
 
 # Software base for alpine
-RUN apk --no-cache add curl  && \
-    apk add vim
+# RUN apk --no-cache add curl  && \
+#     apk add vim
 
 # copy artifact build from the 'build environment'
 COPY --from=build /app/dist /usr/share/nginx/html

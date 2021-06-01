@@ -5,6 +5,7 @@ import { ThemeModule } from '../@theme/theme.module';
 import { PagesComponent } from './pages.component';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { PagesRoutingModule } from './pages-routing.module';
+import { ButtonsComponent } from './forms/buttons/buttons.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { PagesRoutingModule } from './pages-routing.module';
   ],
   declarations: [
     PagesComponent,
+    ButtonsComponent,
   ],
 })
 export class PagesModule {
